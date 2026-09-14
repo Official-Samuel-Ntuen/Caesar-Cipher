@@ -1,5 +1,4 @@
-python3 -c "
-content = '''# 🔐 Caesar Cipher — Encryption & Decryption Tool
+### 🔐 Caesar Cipher — Encryption & Decryption Tool
 
 > A real-time encryption and decryption web application built on the Caesar Cipher algorithm with a red hacker theme and brute force attack simulation.
 
