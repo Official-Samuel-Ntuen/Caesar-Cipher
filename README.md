@@ -52,7 +52,9 @@ Where:
 **Example with shift 3:**
 
 Plain: H E L L O
+
 ASCII: 72 69 76 76 79
+
 Encrypted: K H O O R
 
 
