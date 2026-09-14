@@ -155,7 +155,3 @@ This project is open source and available under the [MIT License](LICENSE).
 
 > *\"You cannot hash what is weak. Filter entropy before Argon2id.\"* — DecodeLabs
 '''
-with open('README.md', 'w') as f:
-    f.write(content)
-print('README created!')
-"
