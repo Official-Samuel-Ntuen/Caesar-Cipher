@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher | DecodeLabs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix"></canvas>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>💀 CAESAR CIPHER</h1>
+            <p>DECODELABS CYBERSECURITY PROJECT 2</p>
+            <p class="subtitle">CONFIDENTIALITY LOGIC — ENCRYPTION & DECRYPTION</p>
+        </div>
+
+        <!-- Input Section -->
+        <div class="card">
+            <label>ENTER YOUR MESSAGE</label>
+            <textarea id="inputText" 
+                placeholder="Type your message here..."></textarea>
+
+            <label>SHIFT KEY (1-25)</label>
+            <div class="shift-wrapper">
+                <input type="range" id="shiftSlider" 
+                    min="1" max="25" value="3"
+                    oninput="updateShift()">
+                <span id="shiftValue">3</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="buttons">
+                <button class="btn-encrypt" 
+                    onclick="processText('encrypt')">
+                    🔒 ENCRYPT
+                </button>
+                <button class="btn-decrypt" 
+                    onclick="processText('decrypt')">
+                    🔓 DECRYPT
+                </button>
+                <button class="btn-brute" 
+                    onclick="processText('brute')">
+                    💀 BRUTE FORCE
+                </button>
+            </div>
+        </div>
+
+        <!-- Output Section -->
+        <div class="card" id="outputCard">
+            <label id="outputLabel">OUTPUT</label>
+            <textarea id="outputText" readonly
+                placeholder="Result will appear here..."></textarea>
+            <button class="btn-copy" onclick="copyOutput()">
+                📋 COPY OUTPUT
+            </button>
+        </div>
+
+        <!-- Brute Force Results -->
+        <div class="card" id="bruteCard" style="display:none">
+            <label>💀 BRUTE FORCE RESULTS — ALL 25 SHIFTS</label>
+            <div id="bruteResults"></div>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
