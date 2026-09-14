@@ -81,16 +81,19 @@ Encrypted: K H O O R
 Caesar-Cipher/
 │
 ├── app.py # Flask backend & cipher logic
+
 │
 ├── templates/
 │ └── index.html # Frontend HTML
 │
+
 ├── static/
 │ ├── css/
 │ │ └── style.css # Red hacker styling
 │ └── js/
 │ └── script.js # Matrix rain & cipher logic
 │
+
 └── README.md
 
 
@@ -135,8 +138,8 @@ http://127.0.0.1:5000
 
 ## 👨‍💻 Author
 
-**Samuel Ntuen**
-Junior Cybersecurity Analyst | DecodeLabs Intern 2026
+**Samuel M. Ntuen**
+Cybersecurity Intern | DecodeLabs Intern 2026
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/yourprofile)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat-square&logo=github)](https://github.com/Official-Samuel-Ntuen)
